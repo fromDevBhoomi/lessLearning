@@ -38,17 +38,11 @@
 					obj[0].title + '<br>' +
 					obj[0].body;
 					*/
-
-
-
 					for (i=0, len= obj.length;  i < len ; ++i) {
 						var post = obj[i];
-						document.getElementById('test-data').innerHTML += '<h2>' + post.title + '</h2><p>' + post.body + '</p>';
+						document.getElementById('test-data').innerHTML += '<h2>' + i + '.)' + post.title + '</h2><p>' + post.body + '</p>';
 					}
-
 					document.getElementById('preloader').remove();
-
-
 				}
 				else {
 	   				document.getElementById('test-data').innerHTML = '<h3 id="preloader">Loading, Please Wait</h3>';
