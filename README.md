@@ -1,2 +1,2 @@
-LESS Preprocessor
+SASS Preprocessor
 
