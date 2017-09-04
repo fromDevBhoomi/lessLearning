@@ -1,16 +1,17 @@
 var gulp = require('gulp'),
-	minify = require('gulp-uglify');
+	uglify = require('gulp-uglify'),
+	sass = require('gulp-ruby-sass');
 
-gulp.task('default', function(){
+gulp.task('minifyJS', function(){
 	gulp.src('js/*.js')
-	.pipe(minify())
-	.pipe(gulp.dest('minjs'))
+	.pipe(uglify())
+	.pipe(gulp.dest('minjs'));
 });
 
 gulp.task('watch', function(){
-	gulp.watch('js/*.js', ['default'])
+	gulp.watch('js/*.js', ['minifyJS'])
 });
 
+gulp.task('default', ['minifyJS', 'watch']);
 
-//gulp.task('default', ['watch']);
-
+//console.log(sass);

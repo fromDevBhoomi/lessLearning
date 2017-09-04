@@ -1,1 +1,1 @@
-$(function(){$("#dialog").dialog({height:500,width:350,modal:!0,draggable:!1,buttons:{Send:function(){},Close:function(){$(this).dialog("close")}},open:function(o,i){$(".ui-dialog-titlebar-close").hide()},close:function(){allFields.val("").removeClass("ui-state-error")}})});
+$(document).ready(function(){$("#loginDialog").modal({height:500,width:800})});
