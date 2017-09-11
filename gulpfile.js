@@ -1,5 +1,5 @@
 /*
- *	GulpScript Task: Minifying JS, Compiling Sass to CSS, Watching for changes in files 
+ *	GulpScript Tasks: Minifying JS, Compiling Sass to CSS, Watching for changes in files 
  */
 
 var gulp = require('gulp'),
@@ -15,9 +15,10 @@ gulp.task('minifyJS', function(){
 
 
 gulp.task('styles', function(){
-	//console.log('Styles task working correctly');
 	gulp.src('sass/**/*.scss')
-		.pipe(sass())
+		.pipe(sass({
+			outputStyle: 'compressed' /* The Key "outputStyle" can vary depending on the npm package we have installed in the project */ 
+		}))
 		.pipe(gulp.dest('css'));
 });
 

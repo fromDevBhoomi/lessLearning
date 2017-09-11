@@ -1,12 +1,24 @@
-$base-color: #333;
+/*
+ *	SL Main.scss
+ */
+
+/* Variables */
+@import "variables.scss";
+
+/* Mixins */
+@import "mixins.scss";
+
+/* 
+ *	SL Compontents
+ */
+/* Buttons Component */
+@import "buttons.scss";
+
 
 
 body {
   background-color:$base-color;
 }
-
-
-
 
 
 /* 
