@@ -1,0 +1,30 @@
+/*
+ * SL Demo Styles
+ */
+
+a,
+a:hover,
+button,
+button:hover,
+.btn,
+.btn:hover {
+	@include defaultTransition();
+}
+
+a:focus,
+button:focus,
+.btn:focus {
+	outline:none;
+}
+
+.sl-demo-wrapper {
+	width:100%;
+	max-width:1000px;
+	margin:0 auto;
+	padding:100px 0 0;
+	text-align:center;
+}
+
+
+
+

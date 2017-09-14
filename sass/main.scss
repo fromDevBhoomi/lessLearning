@@ -8,17 +8,24 @@
 /* Mixins */
 @import "mixins.scss";
 
-/* 
- *	SL Compontents
- */
+
+/***************************************	
+	SL Compontents
+***************************************/
 /* Buttons Component */
 @import "buttons.scss";
 
 
+/* SL Demo Styles */
+@import "sl-demo.scss";
 
 body {
-  background-color:$base-color;
+  background-color:#fff;
+  font-size:14px;
 }
+
+
+
 
 
 /* 
