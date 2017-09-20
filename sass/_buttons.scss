@@ -30,3 +30,14 @@
 	font-size:13px;
 	padding:6px 15px; 
 }
+
+/* Shape Variant */
+.sl-btn-rounded {
+	@include roundedCorners(100px);
+}
+
+
+
+
+
+
