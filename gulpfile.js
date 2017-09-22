@@ -17,7 +17,7 @@ gulp.task('minifyJS', function(){
 gulp.task('styles', function(){
 	gulp.src('sass/**/*.scss')
 		.pipe(sass({
-			outputStyle: 'compressed' /* The Key "outputStyle" can vary depending on the npm package we have installed in the project */ 
+			outputStyle: 'expanded' /* The Key "outputStyle" can vary depending on the npm package we have installed in the project */ 
 		}))
 		.pipe(gulp.dest('css'));
 });

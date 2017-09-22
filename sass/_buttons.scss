@@ -14,7 +14,8 @@
 		color:#fff;
 	}
 
-	&:focus {
+	&:focus,
+	&:active {
 		color:#fff;
 	}
 }
@@ -28,7 +29,7 @@
 
 .sl-btn-small {
 	font-size:13px;
-	padding:6px 15px; 
+	padding:6px 15px;
 }
 
 /* Shape Variant */
@@ -36,8 +37,19 @@
 	@include roundedCorners(100px);
 }
 
+/* Ghost Button */
+.sl-btn-ghost {
+	background-color:transparent;
+	border-width:2px;
+	color:$base-color-dark;
 
+	&:focus,
+	&:active {
+		color:$base-color-dark;
+	}
 
-
-
-
+	&:focus:hover,
+	&:active:hover {
+		color:#fff;
+	}
+}

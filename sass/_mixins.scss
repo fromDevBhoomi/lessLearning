@@ -3,7 +3,7 @@
  */
 
 /* Rounded Corners */
-@mixin roundedCorners($radius:4px) {
+@mixin roundedCorners($radius:3px) {
 	-webkit-border-radius:$radius;
 	   -moz-border-radius:$radius;
 			border-radius:$radius;
